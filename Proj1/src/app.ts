@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function init(): Promise<ServiceWorkerRegistration> {
   const menuLinks = document.getElementById("mainNavbar").children;
   const numberOfCirclesInput = document.getElementById(
-    "numerOfFunctions"
+    "numberOfFunctions"
   ) as HTMLInputElement;
   canvas = document.getElementById("visualisation") as HTMLCanvasElement;
 
