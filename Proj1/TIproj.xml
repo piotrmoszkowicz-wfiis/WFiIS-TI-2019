@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<projekty>
+    <projekt no="1" >
+        projekt1/dist/index.html
+    </projekt>
+    <projekt no="2" >
+        projekt2/index.html
+    </projekt>
+</projekty>

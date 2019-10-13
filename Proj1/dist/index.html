@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wizualizacja szeregu Fouriera :: Piotr Moszkowicz</title>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="mainNavbar">
+            <a href="#" data-tab="introduction">Wstęp</a>
+            <a href="#" data-tab="aboutFourier">Kim był Fourier?</a>
+            <a href="#" data-tab="fourierSeries">Szereg Fourier'a</a>
+            <a href="#" data-tab="fourierSeriesVisualisation">Wizualizacja szeregu Fourier'a</a>
+        </nav>
+    </header>
+    <main>
+        <article id="introduction">
+            <h2>Wstęp</h2>
+            <p>
+                Mój projekt będzie przedstawiać wizualizację szeregu Fourier'a za pomocą technologii WebGL.
+            </p>
+        </article>
+        <article id="aboutFourier" hidden="hidden">
+            <h2>O Fourierze</h2>
+            <p>Jean Baptiste Joseph Fourier (ur. 21 marca 1768 w Auxerre, zm. 16 maja 1830 r. w Paryżu) – francuski matematyk i fizyk.</p>
+            <p>Twórca teorii szeregów Fouriera i transformacji Fouriera.</p>
+            <p>Szereg Fouriera to przedstawienie funkcji okresowej f w postaci sumy nieskończonego ciągu sinusów i cosinusów pomnożonych przez współczynniki. Fourier podał wzory całkowe na te współczynniki i twierdził, że ten szereg jest zbieżny do f dla szerokiego zakresu funkcji. Warunki dostateczne, przy których szereg Fouriera jest zbieżny do rozwijanej funkcji podał Dirichlet.</p>
+            <p>Fourier używał tych szeregów w swej fundamentalnej pracy z teorii przewodzenia ciepła, opublikowanej w swej pracy Théorie analytique de la chaleur, Paris, 1822.</p>
+            <p>Na jego cześć uniwersytet w Grenoble, w którym w 1811 r. założył on Faculté des Sciences, nazwano L’université Joseph-Fourier (UJF).</p>
+            <p>W czasie wyprawy Napoleona do Egiptu Fourier był sekretarzem Instytutu Egipskiego w Kairze, komisarzem francuskim przy rządzie egipskim i szefem sądownictwa. Później był m.in. prefektem departamentu Izery i mieszkał w Grenoble.</p>
+            <p>Jego nazwisko pojawiło się na liście 72 nazwisk na wieży Eiffla.</p>
+            <p>Żródło: <a href="https://pl.wikipedia.org/wiki/Jean_Baptiste_Joseph_Fourier" target="_blank" rel="nofollow">Wikipedia</a></p>
+        </article>
+        <article id="fourierSeries" hidden="hidden">
+            <h2>Szereg Fouriera</h2>
+            <p>Szereg Fouriera – szereg pozwalający rozłożyć funkcję okresową, spełniającą warunki Dirichleta, na sumę funkcji trygonometrycznych.
+                Nauka na temat szeregów Fouriera jest gałęzią analizy Fouriera.
+                Szeregi Fouriera zostały wprowadzone w 1807 roku przez Josepha Fouriera w celu rozwiązania równania ciepła dla metalowej płyty.
+                Doprowadziło to jednak do przewrotu w matematyce i wprowadzenia wielu nowych teorii.
+                Dziś mają one wielkie znaczenie między innymi w fizyce, teorii drgań oraz przetwarzaniu sygnałów obrazu (kompresja jpeg) i dźwięku (kompresja mp3).</p>
+            <p>Żródło: <a href="https://pl.wikipedia.org/wiki/Szereg_Fouriera" target="_blank" rel="nofollow">Wikipedia</a></p>
+        </article>
+        <article id="fourierSeriesVisualisation" hidden="hidden">
+            <h2>Wizualizacja szeregu Fourier'a</h2>
+            <div class="flex">
+                <div class="col">
+                    <p>Wybierz ilość funkcji z których będzie generowany szereg Fourier'a.</p>
+                    <label for="numberOfCircles">Ilośc funkcji: </label>
+                    1 <input type="range" min="1" max="15" value="4" id="numberOfCircles" /> 15
+                </div>
+                <div class="col">
+                    <canvas id="visualisation" width="512" height="256"></canvas>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        &copy; 2019 - Piotr Moszkowicz
+    </footer>
+</body>
+</html>
