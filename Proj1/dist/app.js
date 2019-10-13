@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
  */
 async function init() {
     const menuLinks = document.getElementById("mainNavbar").children;
-    const numberOfCirclesInput = document.getElementById("numerOfFunctions");
     canvas = document.getElementById("visualisation");
     for (const menuLink of menuLinks) {
         menuLink.addEventListener("click", e => {
@@ -20,8 +19,9 @@ async function init() {
             openTab(e.target.dataset.tab);
         });
     }
-    numberOfCirclesInput.addEventListener("change", () => {
-        changeNumberOfFunctions(parseInt(numberOfCirclesInput.value, 10));
+    const numberOfFunctionsInput = document.getElementById("numberOfFunctions");
+    numberOfFunctionsInput.addEventListener("change", () => {
+        changeNumberOfFunctions(parseInt(numberOfFunctionsInput.value, 10));
     });
     try {
         const sw = await registerServiceWorker();

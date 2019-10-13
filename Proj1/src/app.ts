@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", async () => {
  */
 async function init(): Promise<ServiceWorkerRegistration> {
   const menuLinks = document.getElementById("mainNavbar").children;
-  const numberOfCirclesInput = document.getElementById(
-    "numberOfFunctions"
-  ) as HTMLInputElement;
   canvas = document.getElementById("visualisation") as HTMLCanvasElement;
 
   for (const menuLink of menuLinks) {
@@ -27,8 +24,12 @@ async function init(): Promise<ServiceWorkerRegistration> {
     });
   }
 
-  numberOfCirclesInput.addEventListener("change", () => {
-    changeNumberOfFunctions(parseInt(numberOfCirclesInput.value, 10));
+  const numberOfFunctionsInput = document.getElementById(
+    "numberOfFunctions"
+  ) as HTMLInputElement;
+
+  numberOfFunctionsInput.addEventListener("change", () => {
+    changeNumberOfFunctions(parseInt(numberOfFunctionsInput.value, 10));
   });
 
   try {
