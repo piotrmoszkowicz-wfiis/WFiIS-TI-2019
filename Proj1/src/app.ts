@@ -76,13 +76,15 @@ function openTab(tabId: string): void {
  * Functions, which registers service worker
  */
 async function registerServiceWorker(): Promise<ServiceWorkerRegistration> {
-  const registrations = await navigator.serviceWorker.getRegistrations();
+  if ('serviceWorker' in navigator) {
+    const registrations = await navigator.serviceWorker.getRegistrations();
 
-  for (const registration of registrations) {
-    await registration.unregister();
+    for (const registration of registrations) {
+      await registration.unregister();
+    }
+
+    return navigator.serviceWorker.register("/serviceWorker.js");
   }
-
-  return navigator.serviceWorker.register("/serviceWorker.js");
 }
 
 /**

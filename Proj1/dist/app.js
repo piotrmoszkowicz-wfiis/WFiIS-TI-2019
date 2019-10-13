@@ -59,11 +59,13 @@ function openTab(tabId) {
  * Functions, which registers service worker
  */
 async function registerServiceWorker() {
-    const registrations = await navigator.serviceWorker.getRegistrations();
-    for (const registration of registrations) {
-        await registration.unregister();
+    if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const registration of registrations) {
+            await registration.unregister();
+        }
+        return navigator.serviceWorker.register("/serviceWorker.js");
     }
-    return navigator.serviceWorker.register("/serviceWorker.js");
 }
 /**
  * Tells service worker to start/stop counting fourier series points
