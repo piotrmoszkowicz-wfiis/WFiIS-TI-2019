@@ -14,5 +14,4 @@ jobs:
           name: piotrmoszkowicz/ti-proj-1
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          registry: registry.nommo.dev:443
           workdir: Proj1
