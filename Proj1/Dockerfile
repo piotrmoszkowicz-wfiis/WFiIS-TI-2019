@@ -1,11 +1,9 @@
   # build stage
 FROM node:10.16.3-slim as build-stage
-ENV NODE_ENV=production
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm i -g typescript
 RUN npm run build
 
 # production stage
