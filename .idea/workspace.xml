@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce09b432-51bd-4890-bda4-7ef718a42420" name="Default Changelist" comment="Finished project for TI">
-      <change afterPath="$PROJECT_DIR$/Proj1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/TIproj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/dist/serviceWorker.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/src/serviceWorker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proj1/tslint.json" afterDir="false" />
+    <list default="true" id="ce09b432-51bd-4890-bda4-7ef718a42420" name="Default Changelist" comment="More fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -49,13 +39,18 @@
   </component>
   <component name="ProjectId" id="1S9LQBNDCyWCI0BUuq5C4iekj7o" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Proj1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reveal.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -70,18 +65,6 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/Proj1/node_modules/typescript/lib" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="npm.Build Proj1">
     <configuration name="Build Proj1" type="js.build_tools.npm">
@@ -128,6 +111,18 @@
       <item itemvalue="npm.Prettier Proj1" />
     </list>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -138,8 +133,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570970845601</updated>
-      <workItem from="1570970846854" duration="14521000" />
+      <workItem from="1570970846854" duration="16210000" />
+      <workItem from="1575293725311" duration="40000" />
+      <workItem from="1575483761817" duration="380000" />
+      <workItem from="1575485975283" duration="332000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished project for TI">
+      <created>1570991667954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570991667954</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finished project for TI">
+      <created>1570991720034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570991720034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Some fixes">
+      <created>1570992191118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570992191118</updated>
+    </task>
+    <task id="LOCAL-00004" summary="More fixes">
+      <created>1570992405486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570992405486</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bit more fixes">
+      <created>1570992708041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570992708041</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Docker">
+      <created>1570993355679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570993355679</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,14 +196,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Proj1" />
+    </ignored-roots>
     <MESSAGE value="Finished project for TI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished project for TI" />
+    <MESSAGE value="Some fixes" />
+    <MESSAGE value="More fixes" />
+    <MESSAGE value="Bit more fixes" />
+    <MESSAGE value="Add Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Docker" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="127" key="CommitChangelistDialog2" timestamp="1575483793201">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="423" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575483793201" />
   </component>
 </project>
