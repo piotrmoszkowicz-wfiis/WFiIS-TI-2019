@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   serviceWorker = await init();
 });
 
-// dodałem formularz kontaktowy
-
 /**
  * Initialize function, which is invoked on DOMContentLoaded
  */
