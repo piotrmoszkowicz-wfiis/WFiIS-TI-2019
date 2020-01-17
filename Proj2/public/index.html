@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Zapisywanie temperatur :: TI Projekt 2 :: Piotr Moszkowicz</title>
+</head>
+<body>
+    <form action="#" id="loginForm" method="post">
+        <label for="cityInput">
+            Email:
+        </label>
+        <input type="text" name="email" id="emailInput" />
+        <label for="valueInput">
+            Hasło:
+        </label>
+        <input type="password" name="password" id="passwordInput" />
+        <input type="submit" value="Zaloguj!" />
+    </form>
+    <hr>
+    <form action="#" id="temperatureForm" method="post">
+        <label for="cityInput">
+            Miejscowość:
+        </label>
+        <input type="text" name="city" id="cityInput" />
+        <label for="valueInput">
+            Temperatura:
+        </label>
+        <input type="text" name="value" id="valueInput" />
+        <input type="submit" value="Dodaj!" />
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Miejscowość</th>
+                <th>Temperatura</th>
+            </tr>
+        </thead>
+        <tbody id="temperatureTableBody">
+
+        </tbody>
+    </table>
+    <hr>
+    <div id="wrapper">
+        <div id="histogramWrapper">
+            <canvas id="histogram"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
